@@ -31,6 +31,10 @@ li{margin-bottom:6px}
 .d{font-variant-numeric:tabular-nums}
 address{font-style:normal;margin-bottom:10px}
 .draft{background:#fff6d6;border:1px solid #ecd98c;color:#5a4a10;padding:8px 12px;font-size:14px;margin-top:16px}
+.cv{list-style:none;padding:0}
+.cv li{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:14px;margin-bottom:12px}
+.cv .y{color:var(--muted);font-variant-numeric:tabular-nums}
+@media (max-width:480px){.cv li{grid-template-columns:1fr;gap:0}}
 .foot{margin-top:40px;color:var(--muted);font-size:14px}
 @media (max-width:480px){.ph{height:150px}.ph.me{width:118px}.ph.group{width:200px}h1{font-size:26px}}
 </style>
@@ -45,14 +49,13 @@ address{font-style:normal;margin-bottom:10px}
 <nav aria-label="Site"><a href="index.html">Home</a><a href="publications.html">Publications</a><a href="talks.html">Talks</a><a href="teaching.html">Teaching</a><a href="education.html" class="on" aria-current="page">Education</a><a href="grants.html">Grants &amp; Projects</a></nav>
 
 <h2>Education</h2>
-<ul>
-<li><strong>PhD in Applied Mathematics</strong>, specialization in cryptography, [University], [year].<br>Thesis: "[Thesis title]". Supervisor: [Supervisor name].</li>
-<li><strong>Master in [Mathematics / Applied Mathematics]</strong>, [specialization], [University], [year].</li>
-<li><strong>Licence (Bachelor) in [Mathematics]</strong>, [University], [year].</li>
-</ul>
-<h2>Schools and Training</h2>
-<ul>
-<li>[Summer school or training in cryptography], [place], [year].</li>
+<ul class="cv">
+<li><span class="y">2018–2026</span><div><strong>PhD in Applied Mathematics, specialization in Cryptography</strong>, <em>Université Gaston Berger</em>, Saint-Louis, Senegal.<br>Research topic: design and analysis of signcryption schemes secure against insider adversaries.</div></li>
+<li><span class="y">2014–2016</span><div><strong>Master in Algebra and Applications</strong>, <em>Université Gaston Berger</em>, Saint-Louis, Senegal.</div></li>
+<li><span class="y">2013–2014</span><div><strong>Maîtrise in Mathematics</strong>, <em>Faculté des Sciences Exactes et Appliquées de Farcha</em>, N'Djamena, Chad.</div></li>
+<li><span class="y">2012–2013</span><div><strong>Licence (Bachelor, L3) in Mathematics</strong>, <em>Faculté des Sciences Exactes et Appliquées de Farcha</em>, N'Djamena, Chad.</div></li>
+<li><span class="y">2008–2010</span><div><strong>DEUG in Mathematics and Physics</strong>, <em>Faculté des Sciences Exactes et Appliquées de Farcha</em>, N'Djamena, Chad.</div></li>
+<li><span class="y">2005</span><div><strong>Baccalauréat, série C</strong> (mathematics and physical sciences), <em>Lycée Alpha 3</em>, N'Djamena, Chad.</div></li>
 </ul>
 <p class="foot">Last update: [Month DD, YYYY].</p>
 </div>

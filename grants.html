@@ -31,6 +31,10 @@ li{margin-bottom:6px}
 .d{font-variant-numeric:tabular-nums}
 address{font-style:normal;margin-bottom:10px}
 .draft{background:#fff6d6;border:1px solid #ecd98c;color:#5a4a10;padding:8px 12px;font-size:14px;margin-top:16px}
+.cv{list-style:none;padding:0}
+.cv li{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:14px;margin-bottom:12px}
+.cv .y{color:var(--muted);font-variant-numeric:tabular-nums}
+@media (max-width:480px){.cv li{grid-template-columns:1fr;gap:0}}
 .foot{margin-top:40px;color:var(--muted);font-size:14px}
 @media (max-width:480px){.ph{height:150px}.ph.me{width:118px}.ph.group{width:200px}h1{font-size:26px}}
 </style>
